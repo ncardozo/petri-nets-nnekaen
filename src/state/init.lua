@@ -28,7 +28,12 @@ function State.__call (state, transition)
     return nil, "transition is not enabled"
   end
   -- TODO: perform transition firing
-  local pre  = ...
+  local t={}
+  fun.each(function(pre)):
+    t[pre.place]-pre.validation
+    end,transition.pre()
+ 
+  local pre  = marking.create(t)
   local post = ...
   return setmetatable ({
     petrinet   = state.petrinet,
