@@ -30,11 +30,15 @@ function State.__call (state, transition)
   -- TODO: perform transition firing
   local t={}
   fun.each(function(pre)):
-    t[pre.place]-pre.validation
-    end,transition.pre()
+    t[pre.place]=pre.valuation
+    end,transition.pre())
+  local e={}
+  fun.each(function(pre)):
+   tt[post.place]=post.valuation
+   end,transition.post())
  
   local pre  = marking.create(t)
-  local post = ...
+  local post =marking.create(t)
   return setmetatable ({
     petrinet   = state.petrinet,
     marking    = state.marking - pre + post,
