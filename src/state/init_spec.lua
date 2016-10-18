@@ -4,7 +4,7 @@ local Fun      = require "fun"
 local petrinet = require "petrinet.page47"
 
 describe ("State", function ()
-
+describe ("#test State", function ()
   it ("can be created", function ()
     local state = State.create (petrinet)
     assert.are.equal (getmetatable (state), State)
