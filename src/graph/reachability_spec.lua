@@ -4,7 +4,7 @@ local Reachability = require "graph.reachability"
 local petrinet     = require "petrinet.page47"
 local philosophers = require "petrinet.page24"
 
-describe ("Reachability graph", function ()
+describe ("#test Reachability graph", function ()
 
   it ("can be created with an implicit traversal", function ()
     local reachability = Reachability.create ()
