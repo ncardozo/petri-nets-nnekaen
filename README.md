@@ -185,7 +185,7 @@ Examples of Petri nets are given in files `page*.lua`.
 Evaluation follows the questions:
 * do you have done anything at the deadline?
   (no: 0 points)
-  * [ ] Done anything
+  * [x] Done anything
 * do you have understood and implemented all the required notions?
   (yes: 4 points for all, no: 2 points for none)
   * [ ] Reachability graph
@@ -207,4 +207,4 @@ Evaluation follows the questions:
 
 | Grade |
 | ----- |
-|       |
+|   1   |
